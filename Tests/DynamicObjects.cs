@@ -576,7 +576,7 @@ namespace Dynamitey.Tests
         }
 
 
-#if !NETCOREAPP2_0
+#if !NETCOREAPP2_1
 
         [Test]
         public void TestCodeDomLateTypeBind()

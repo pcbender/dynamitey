@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-#if !NETCOREAPP2_0
+#if !NETCOREAPP2_1
 using IronPython.Hosting;
 using Microsoft.Scripting;
 #endif
@@ -37,7 +37,7 @@ namespace Dynamitey.Tests
             Assert.AreEqual(expected, actual);
 
         }
-#if !NETCOREAPP2_0
+#if !NETCOREAPP2_1
         private dynamic RunPythonHelper(object linq, string code)
         {
             
